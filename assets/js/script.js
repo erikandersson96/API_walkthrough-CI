@@ -40,6 +40,10 @@ function displayErrors(data) {
             results += `<div class="error">${error.error}</div>`; 
         }
     }
+
+    document.getElementById("resultsModalTitle").innerText = heading; 
+    document.getElementById("results-content").innerHTML = results;
+    resultsModal.show()
 }
 
 async function getStatus(e) {
